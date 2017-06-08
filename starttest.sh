@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/usr/local/hadoop/bin/hadoop jar WordCount.jar WordCount 890-8.txt test2
+/usr/local/hadoop/bin/hadoop jar ~/hadoop-Sandbox/WordCount.jar WordCount ~/hadoop-Sandbox/890-8.txt $1
 echo "First test done."
-/usr/local/hadoop/bin/hadoop jar SingularWordCount.jar WordCount 890-8.txt singletest2
+/usr/local/hadoop/bin/hadoop jar ~/hadoop-Sandbox/SingularWordCount.jar WordCount ~/hadoop-Sandbox/890-8.txt $2
 echo "Second test done."
